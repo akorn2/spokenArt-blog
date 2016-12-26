@@ -61,7 +61,9 @@ var PostListView = React.createClass({
 
         return (
             <div>
-                
+                {/* @goal = component for video with setStates for desktop only */}
+                {/* @goal = component for images & sales copy */}
+
                 <PostListHeader header={this.state.postListContent.header} content={this.state.postListContent.content}/>
 
                 <div className="post-list">
