@@ -48,7 +48,7 @@ var getIncludesByType = function(type, includePublicPath) {
         if(!!paths[path]) {
             return false;
         }
-        
+
         paths[path] = true;
         return true;
     });

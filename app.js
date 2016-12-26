@@ -35,7 +35,7 @@ app.use(function (req, res) {
 
     var data = res.locals.data || {};
     alt.bootstrap(JSON.stringify(data));
-    
+
     var metaDescription = res.locals.metaDescription || '';
 
     var iso = new Iso();
@@ -45,7 +45,7 @@ app.use(function (req, res) {
         var content = React.renderToString(React.createElement(Handler));
 
         iso.add(content, alt.flush());
-        
+
         res.render('index',{
             content:iso.render(),
             pageTitle: config.pageTitle,

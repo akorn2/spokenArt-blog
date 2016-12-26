@@ -11,7 +11,7 @@ var AuthorMixin = {
         if(post.author.name && post.author.name != '') {
             details.push(<span key="author-name" className="author-name">{post.author.name}</span>);
         }
-        return details;
+        return details; 
     }
 };
 
