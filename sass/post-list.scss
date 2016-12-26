@@ -2,10 +2,24 @@
   display: block;
   padding: 15px 20px;
   text-decoration: none;
+  position: relative;
 
   &:hover{
     background: #ECEFF1;
     text-decoration: none;
+  }
+
+  .post-image{
+    position: absolute;
+    top: 2.5px;
+    right: 20px;
+    height: 95px;
+    width: 100px;
+    // background: no-repeat center/80% url("../images/voteByBike/bike0.jpg");
+
+    img{
+      width:90%;
+    }
   }
 
   .post-title{
