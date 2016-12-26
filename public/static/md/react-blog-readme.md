@@ -1,4 +1,4 @@
-# React Blog
+# React Blogz
 
 This project provides a responsive SEO friendly React isomorphic blog.
 
@@ -11,12 +11,12 @@ This project provides a responsive SEO friendly React isomorphic blog.
 - [Content Recommendations and Explanations](#content-recommendations-and-explanations)
 
 ### Demo
-The following link contains demo content for the blog. These examples are packaged into the current code base. [Demo](http://reactblog-jrossi.rhcloud.com/) 
+The following link contains demo content for the blog. These examples are packaged into the current code base. [Demo](http://reactblog-jrossi.rhcloud.com/)
 
 ### Code for this project
 The code for this project is located on Github [here](https://github.com/jrossi227/react-blog)
 
-### How to run 
+### How to run
 
 1. Install Gulp - `npm install -g gulp`
 2. `npm install` to install dependencies.
@@ -41,36 +41,36 @@ It has the following options:
 All Blog content is configured in `public/static/posts.json`. posts.json contains two fields **postListContent** and **posts**
 
 #### postListContent
-Contains three fields: 
+Contains three fields:
 
 - **header** - This is the header that appears in the post list view. This value is text only.
 - **content** - This is the description that appears in the post list view. You may use html in this field.
-- **metaDescription** - This is the meta description tag that is used for seo in list view. 
+- **metaDescription** - This is the meta description tag that is used for seo in list view.
 
 #### posts
-Contains seven fields, some are optional: 
+Contains seven fields, some are optional:
 
 - **id** - A unique id for the article, this will not be seen by anyone.
 - **slug** - The url format for the article post. This cannot contain spaces.
 - **metaDescription** (Optional) - This is the meta description tag that is used for seo when the article is shown.
 - **description** (Optional) - This is a string containing html content for your post. This should only be used if you are not including a file.
-- **includes** (Optional) - This is a JSON array of include objects. 
+- **includes** (Optional) - This is a JSON array of include objects.
 
     Each include object has the following fields:
-    
+
     - **type** - Valid types are as follows:
         - **css** - custom styles to apply to the article. **Every article inherits bootstrap 3 css by default**.
-        - **html** - custom html content for your post. 
-        - **js** - custom javascript content for your post 
+        - **html** - custom html content for your post.
+        - **js** - custom javascript content for your post
         - **md** - a markdown file for your post
         - **jsx** - a React component to use for your post. You can write custom React components and import them into your React component using commonJS. You can only import one jsx file in the includes for a post.
-    - **path** - The absolute path in reference to the `public/directory` eg. `/static/md/react-blog.md` 
-    
+    - **path** - The absolute path in reference to the `public/directory` eg. `/static/md/react-blog.md`
+
 - **author** - This is a JSON object with two fields. Each field is optional, but you must include an author object even if its empty.
-    - **photo** - The absolute path in reference to the `public/directory` for an image eg. `/images/jonathan.jpg` 
+    - **photo** - The absolute path in reference to the `public/directory` for an image eg. `/images/jonathan.jpg`
     - **name** - A text value for an authors name
 
-### Content Recommendations and Explanations 
+### Content Recommendations and Explanations
 
 The Blog currently has three primary options for rendering content.
 
