@@ -19,7 +19,6 @@ var PostPreview = React.createClass({
     render : function() {
         return (
             <a href={'/post/' + this.props.post.id +'/'+this.props.post.slug} className="single-post" onClick={this.loadPost}>
-                <div className="post-title">{this.props.post.title}</div>
                 <div className="post-title">{this.props.post.title} </div>
                 <div className="author-details">
                     {this.getAuthorDetails(this.props.post)}
