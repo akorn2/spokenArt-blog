@@ -1,24 +1,24 @@
 {
   "postListContent": {
-    "header": "React Isomorphic Blog example",
-    "content": "<p>The articles below are used as examples to show the functionality of this blogging system<p>",
-    "metaDescription": "This is a test text only meta description"
+    "header": "Bike Share - Marketing Trends",
+    "content": "<p>We've worked on dozens of bike share marketing campaigns. To provide quality services, we examine majority of bike share marketing projects.<p>",
+    "metaDescription": "bike shares sponsors vinyl wrapped bikes custom marketing campaign"
   },
   "posts": [
     {
       "id" : 1,
       "slug" : "markdown-example",
       "metaDescription": "Markdown Example",
-      "title" : "Markdown example using the Readme from React-Blog",
+      "title" : "Pride Bikes",
       "includes" : [
         {
           "type": "md",
-          "path": "/static/md/react-blog-readme.md"
+          "path": "/static/md/bikes-pride.md"
         }
       ],
       "author" : {
-        "photo" : "/images/jonathan.jpg",
-        "name" : "Jonathan"
+        "photo" : "/images/aaron.jpg",
+        "name" : "Aaron"
       }
     },
     {
@@ -63,9 +63,15 @@
     },
     {
       "id" : 4,
-      "slug" : "placeholder-4",
-      "title" : "Placeholder",
-      "description" : "This is a Placeholder to show paging",
+      "slug" : "react-components-example",
+      "title" : "React Components Test",
+      "metaDescription": "React Components Example",
+      "includes" : [
+        {
+          "type": "jsx",
+          "path": "/static/jsx/test.jsx"
+        }
+      ],
       "author" : {
         "photo" : "/images/jonathan.jpg",
         "name" : "Jonathan"
