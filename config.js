@@ -3,7 +3,7 @@ var port = 9080;
 var config = {
     port: port,
     baseUrl : "http://localhost:" + port,
-    pageTitle: 'React Blog',
+    pageTitle: 'Spoken Art - Bike Share - Case Studies',
     itemsPerPage: 5,
     maxPageButtons: 3
 };
