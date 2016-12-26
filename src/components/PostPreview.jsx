@@ -24,6 +24,7 @@ var PostPreview = React.createClass({
                 <div className="author-details">
                     {this.getAuthorDetails(this.props.post)}
                 </div>
+                <img className="post-image" src={this.props.post.author.photo}/>
             </a>
         )
     }
